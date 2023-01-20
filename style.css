@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{                   /*ESSE MAX EH DO CABECALHO*/
+    max-width: 1200px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar inicio*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    background: greenyellow;
+    padding: 10px 0;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*PORTIFOLIO*/
+.navbar .logo a{ /*PORTIFOLIO*/
+    color: aqua;
+    font-size: 60px;
+    font-weight: 500;
+}
+.navbar .logo a span{ /*PORTIFOLIO*/
+    color: white;
+    transition: all 0.3s ease;
+}
+/*PORTIFOLIO*/
+
+
+
+.navbar.sticky .logo a span{
+    color: #fff
+}
+
+
+
+/*ITENS SE SELECAO*/
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{ /*PASSA O MOUSE SOBRE OS MENUS, MUDA DE COR*/
+    color: aqua;
+}
+/*ITENS SE SELECAO*/
+
+
+
+
+
+/*home inicio*/
+.home{ /*BACKGROUND IMAGE*/
+    display: flex;
+    background: url(image/banner.png) no-repeat center; /*ERRO NO ROSTO DA IMAGEM MODELO*/
+    height: 100vh; /*ERRO NO ROSTO DA IMAGEM MODELO*/
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*ENGLOBA O TEXTO OLA MEU NOME EH*/
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: aqua;
+    font-weight: 800;
+}
+/*ENGLOBA O TEXTO OLA MEU NOME EH*/
+/*home inicio*/
